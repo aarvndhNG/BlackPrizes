@@ -23,7 +23,7 @@ namespace Prizes
     [ApiVersion(2, 1)]
     public class Prizes : TerrariaPlugin
     {
-        private Timer _chatGames;
+        private Timer_chatGames;
         private readonly TSCommandFramework _fx;
         private static PrizesSettings config;
         public static ChatGame cg;
