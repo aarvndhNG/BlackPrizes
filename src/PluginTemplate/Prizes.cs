@@ -173,12 +173,12 @@ namespace Prizes
 
             if (wordProblem != null)
             {
-                TSPlayer.All.SendMessage("[Chat Games] (/answer) Unscramble this word problem and win 25 minutes of rank playtime: " + ScrambleWord(wordProblem), Color.LightGreen);
+                TSPlayer.All.SendMessage("[Chat Games] (/ans) Unscramble this word problem and win!: " + ScrambleWord(wordProblem), Color.LightGreen);
             }
             else
             {
                 cg.wordAnswer = "";
-                TSPlayer.All.SendMessage("[Chat Games] (/answer) Answer this math problem and win 25 minutes of rank playtime: " + mathProblem, Color.LightGreen);
+                TSPlayer.All.SendMessage("[Chat Games] (/ans) Answer this math problem and win!: " + mathProblem, Color.LightGreen);
             }
 
 
