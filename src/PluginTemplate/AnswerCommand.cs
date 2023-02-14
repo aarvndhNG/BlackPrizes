@@ -16,7 +16,7 @@ namespace Prizes.Modules
     {
         PrizesSettings config = Configuration<PrizesSettings>.Settings;
 
-        [Command("answer")]
+        [Command("ans")]
         [Description("The command users use to answer chat games")]
         public IResult Answer(string answer = "")
         {
