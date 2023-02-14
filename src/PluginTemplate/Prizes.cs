@@ -3,8 +3,6 @@ using CSF.TShock;
 using IL.Terraria.Properties;
 using Microsoft.Xna.Framework;
 using MongoDB.Driver;
-using Prizes.Models;
-using Prizes.Modules;
 using System;
 using System.Data;
 using System.Net.Http;
