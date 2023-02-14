@@ -46,7 +46,7 @@ namespace Prizes.Modules
                     cg.Occuring = false;
                     cg.wordAnswer = "";
                     cg.answer = 0;
-                    return Announce("[Chat Games] " + player.Name + " won the chat game (answer: " + answer + ") and has won 25 minutes of rank playtime! Hooray!", Color.Gold);
+                    return Announce("[Chat Games] " + player.Name + " won the chat game (answer: " + answer + ") and has won! Hooray!", Color.Gold);
             }
             else if(cg.wordAnswer != "" && cg.wordAnswer.ToLower()==answer.ToLower())
             {
