@@ -31,7 +31,7 @@ namespace Prizes
 
         public override Version Version => new Version(1, 0, 0);
 
-        public override string Author => "Blackwolf";
+        public override string Author => "Average,Blackwolf";
         public override string Description => "A plugin intended for TBC, implementing interactive chat games and TSL vote rewards!";
 
         public Prizes(Main game) : base(game)
