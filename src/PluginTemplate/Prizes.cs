@@ -55,7 +55,7 @@ namespace Prizes
             {
                 Configuration<PrizesSettings>.Load("Prizes");
                 config = Configuration<PrizesSettings>.Settings;
-                x.Player.SendSuccessMessage("Prizes has been reloaded!");
+                x.Player.SendSuccessMessage("[Prizes] has been reloaded!");
             };
             
             TerrariaApi.Server.ServerApi.Hooks.NetGreetPlayer.Register(this, GreetPlayer);
@@ -173,12 +173,12 @@ namespace Prizes
 
             if (wordProblem != null)
             {
-                TSPlayer.All.SendMessage("[Chat Games] (/ans) Unscramble this word problem and win!: " + ScrambleWord(wordProblem), Color.LightGreen);
+                TSPlayer.All.SendMessage("[Chat Games] (/ans) Unscramble this word problem and win!: " + ScrambleWord(wordProblem), Color.Gold);
             }
             else
             {
                 cg.wordAnswer = "";
-                TSPlayer.All.SendMessage("[Chat Games] (/ans) Answer this math problem and win!: " + mathProblem, Color.LightGreen);
+                TSPlayer.All.SendMessage("[Chat Games] (/ans) Answer this math problem and win!: " + mathProblem, Color.Gold);
             }
 
 
