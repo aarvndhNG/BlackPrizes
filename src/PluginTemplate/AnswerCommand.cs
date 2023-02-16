@@ -11,7 +11,7 @@ using TShockAPI;
 
 namespace Prizes.Modules
 {
-    [RequirePermission("tbc.user")]
+    [RequirePermission("aar.user")]
     internal class AnswerCommand : TSModuleBase<TSCommandContext>
     {
         PrizesSettings config = Configuration<PrizesSettings>.Settings;
