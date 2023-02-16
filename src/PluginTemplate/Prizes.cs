@@ -34,7 +34,7 @@ namespace Prizes
         public override string Author => "Average,Blackwolf";
         public override string Description => "A plugin intended for TBC, implementing interactive chat games and TSL vote rewards!";
 
-        public Prizes(Main game) : base(game)
+        public Prizes(Main game) : base(gam e)
         {
             _fx = new(new()
             {
@@ -173,12 +173,12 @@ namespace Prizes
 
             if (wordProblem != null)
             {
-                TSPlayer.All.SendMessage("[Chat Games] (/ans) Unscramble this word problem and win!: " + ScrambleWord(wordProblem), Color.Gold);
+                TSPlayer.All.SendMessage("[Chat Games]  Unscramble this word problem (to answer this use [c/4ed4c6:/ans]) and receive your rewards!: " + ScrambleWord(wordProblem), Color.Gold);
             }
             else
             {
                 cg.wordAnswer = "";
-                TSPlayer.All.SendMessage("[Chat Games] (/ans) Answer this math problem and win!: " + mathProblem, Color.Gold);
+                TSPlayer.All.SendMessage("[Chat Games] Answer this math problem (to answer this problem use [c/4ed4c6:/ans]) and receive your rewards!: " + mathProblem, Color.Gold);
             }
 
 
