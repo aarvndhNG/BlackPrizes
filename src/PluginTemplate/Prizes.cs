@@ -34,7 +34,7 @@ namespace Prizes
         public override string Author => "Average,Blackwolf";
         public override string Description => "A plugin intended for TBC, implementing interactive chat games and TSL vote rewards!";
 
-        public Prizes(Main game) : base(gam e)
+        public Prizes(Main game) : base(game)
         {
             _fx = new(new()
             {
