@@ -46,7 +46,7 @@ namespace Prizes.Modules
                     cg.Occuring = false;
                     cg.wordAnswer = "";
                     cg.answer = 0;
-                    return Announce("[Chat Games] "+ player.Name +"has won! the chat game Hooray!. Answer was " + answer + "", Color.Green);
+                    return Announce("[Chat Games] [c/3480eb:"+ player.Name +"] has won! the chat game Hooray!. Answer was [c/eb343d:" + answer + "]", Color.Green);
             }
             else if(cg.wordAnswer != "" && cg.wordAnswer.ToLower()==answer.ToLower())
             {
@@ -60,7 +60,7 @@ namespace Prizes.Modules
                 cg.Occuring = false;
                 cg.wordAnswer = "";
                 cg.answer = 0;
-                return Announce("[Chat Games] "+ player.Name +"has won! the chat game Congratz!. Answer was " + answer + "", Color.Green);
+                return Announce("[Chat Games] [c/3480eb:"+ player.Name +"] has won! the chat game Congratz!. Answer was [c/eb343d:" + answer + "]", Color.Green);
             }
             else
             {
