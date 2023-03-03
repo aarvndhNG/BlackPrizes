@@ -1,4 +1,4 @@
-﻿using Auxiliary.Configuration;
+using Auxiliary.Configuration;
 using CSF.TShock;
 using IL.Terraria.Properties;
 using Microsoft.Xna.Framework;
@@ -55,7 +55,7 @@ namespace Prizes
             {
                 Configuration<PrizesSettings>.Load("Prizes");
                 config = Configuration<PrizesSettings>.Settings;
-                x.Player.SendSuccessMessage("[Prizes] has been reloaded!");
+                x.Player.SendSuccessMessage("[Prizes] has been reloaded!",Color.Green);
             };
             
             TerrariaApi.Server.ServerApi.Hooks.NetGreetPlayer.Register(this, GreetPlayer);
@@ -173,12 +173,12 @@ namespace Prizes
 
             if (wordProblem != null)
             {
-                TSPlayer.All.SendMessage("[Chat Games]  Unscramble this word problem (to answer this use [c/4ed4c6:/ans]) and receive your rewards!: " + ScrambleWord(wordProblem), Color.Gold);
+                TSPlayer.All.SendMessage("[Chat Games]  Unscramble this word problem and receive your rewards! To answer the problem use [c/4ed4c6:/ans]: " + ScrambleWord(wordProblem), Color.Gold);
             }
             else
             {
                 cg.wordAnswer = "";
-                TSPlayer.All.SendMessage("[Chat Games] Answer this math problem (to answer this problem use [c/4ed4c6:/ans]) and receive your rewards!: " + mathProblem, Color.Gold);
+                TSPlayer.All.SendMessage("[Chat Games] Answer this math problem and receive your rewards! To answer the problem use [c/4ed4c6:/ans]: " + mathProblem, Color.Gold);
             }
 
 
