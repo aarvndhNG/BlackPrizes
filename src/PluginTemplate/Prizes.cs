@@ -48,14 +48,14 @@ namespace Prizes
 
             if (config.APIKey == "xxx")
             {
-                Console.WriteLine("Prizes: You should probably set your api key in Prizes.json in your tShock folder! If not, whatevs, you do you b.");
+                Console.WriteLine("RealmOfDreams: You should probably set your api key in Prizes.json in your tShock folder! If not, whatevs, you do you b.");
             }
 
             GeneralHooks.ReloadEvent += (x) =>
             {
-                Configuration<PrizesSettings>.Load("Prizes");
+                Configuration<PrizesSettings>.Load("RealmOfDreams");
                 config = Configuration<PrizesSettings>.Settings;
-                x.Player.SendSuccessMessage("[Prizes] has been reloaded!",Color.Green);
+                x.Player.SendSuccessMessage("[RealmOfDreams] has been reloaded!",Color.Green);
             };
             
             TerrariaApi.Server.ServerApi.Hooks.NetGreetPlayer.Register(this, GreetPlayer);
