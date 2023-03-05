@@ -43,7 +43,7 @@ namespace Prizes
         }
         public async override void Initialize()
         {
-            Configuration<PrizesSettings>.Load("Prizes");
+            Configuration<PrizesSettings>.Load("RealmOfDreams");
             config = Configuration<PrizesSettings>.Settings;
 
             if (config.APIKey == "xxx")
