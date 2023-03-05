@@ -27,7 +27,7 @@ namespace Prizes
         private readonly TSCommandFramework _fx;
         private static PrizesSettings config;
         public static ChatGame cg;
-        public override string Name => "Prizes";
+        public override string Name => "Realm of dreams";
 
         public override Version Version => new Version(1, 0, 0);
 
