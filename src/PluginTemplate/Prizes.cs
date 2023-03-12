@@ -22,7 +22,6 @@ namespace Prizes
     public class Prizes : TerrariaPlugin
     {
         private Timer _chatGames;
-        private readonly TSCommandFramework _fx;
         private static PrizesSettings config;
         public static ChatGame cg;
         public override string Name => "Prizes";
