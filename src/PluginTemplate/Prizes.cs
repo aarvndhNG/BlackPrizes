@@ -23,6 +23,7 @@ namespace Prizes
     {
         private Timer _chatGames;
         private static PrizesSettings config;
+        private readonly TSCommandFramework _fx;
         public static ChatGame cg;
         public override string Name => "Prizes";
 
